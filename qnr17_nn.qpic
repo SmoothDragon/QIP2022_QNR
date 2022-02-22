@@ -1,0 +1,128 @@
+HEADER \usepackage[scaled]{beramono}
+HEADER \usepackage[T1]{fontenc}
+DEPTHPAD 2
+GATESIZE 10
+PREAMBLE \providecommand{\bera}[1]{{\fontfamily{fvm}\selectfont{}#1}}
+PREAMBLE \providecommand{\jacobi}[2]{\left(\textstyle\frac{#1}{#2}\right)}
+PREAMBLE \providecommand{\ket}[1]{\left|#1\right\rangle}
+x DEFINE HH x G \bera{H}
+x DEFINE SS x G \bera{S}
+x DEFINE SI x G:fill=black \color{white}\bera{S}
+x DEFINE ZZ x G \bera{Z}
+x DEFINE TT x G \bera{T}
+# x DEFINE TI x G:fill=black \color{white}\bera{T}
+x DEFINE TI x G:width=11 \bera{T}${}^\dagger$
+# x DEFINE p16 x G \bera{$P_{16}$}
+x DEFINE p16 x G:width=14 \bera{\small\mbox{$\sqrt{\mbox{T}}$}}
+x DEFINE p16i x G:fill=black \color{white}\bera{$P_{16}$}
+x0 W
+x1 W
+x2 W
+x3 W
+
+# x0 HH
+x1 HH
+x2 HH
+x3 HH
+
+# x0 HH
++x0 x1
+x0 HH
+x1 SS
+x1 +x2
+x2 +x1
+x2 HH
+x1 TT
+x2 TT
+x3 TT
+
+x1 +x2
+x2 +x3
+x3 TT
+x1 +x2
+x2 +x3
+x3 TI
+x1 +x2
+x2 TI
+x2 +x3
+x3 TI
+x1 +x2
+x2 +x3
+x0 +x1
+x2 HH
+x1 +x2
+x2 +x3
+x1 +x2
+x2 +x1
+x0 +x1
+x2 HH
+x1 TT
+x2 TT
+x3 TT
+
+x1 +x2
+x2 +x3
+x3 TT
+x1 +x2
+x2 +x3
+x3 TI
+x1 +x2
+x2 TI
+x2 +x3
+x3 TI
+x1 +x2
+x2 +x3
+x2 HH
+
+TOUCH
+x0 HH
+x1 HH
+x2 HH
+x3 HH
+
+# Negated control that only flips state of all zero vector
+x0 p16
+x1 p16
+x2 p16
+x3 p16
+
+x0 +x1
+x1 +x2
+x2 +x3
+x1 p16
+x2 p16
+x3 p16
+
+x0 +x1
+x1 +x2
+x2 p16
++x2 x3
+x2 p16
+
+x0 +x1
+x1 +x2
+x2 +x3
+x2 p16
+x3 p16
+
+x0 +x1
+x1 +x2
+x2 p16
++x2 x3
+x2 p16
+
+x0 +x1
+x1 +x2
+x2 +x3
+x2 p16
+
+x0 +x1
+x1 +x2
+x2 p16
++x2 x3
+
+TOUCH
+x0 HH
+x1 HH
+x2 HH
+x3 HH
