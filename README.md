@@ -3,8 +3,8 @@ Documentation and files relevant to QIP2022 presentation
 
 # Poster
 <p align="center">
-<a href="https://github.com/SmoothDragon/QIP2022_QNR/blob/main/QNR_poster.pdf">
-<img src="https://github.com/SmoothDragon/QIP2022_QNR/blob/main/QNR_poster.png">
+<a href="https://github.com/SmoothDragon/QIP2022_QNR/blob/main/QNR_poster.pdf" type="application/pdf">
+<img src="https://github.com/SmoothDragon/QIP2022_QNR/blob/main/QNR_poster.png" alt="QIP2022 Poster">
 </a>
 </p>
 
