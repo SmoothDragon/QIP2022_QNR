@@ -15,10 +15,10 @@ x DEFINE TI x G:width=11 \bera{T}${}^\dagger$
 # x DEFINE p16 x G \bera{$P_{16}$}
 x DEFINE p16 x G:width=14 \bera{\small\mbox{$\sqrt{\mbox{T}}$}}
 x DEFINE p16i x G:fill=black \color{white}\bera{$P_{16}$}
-x3 W \ket{0} \ket{y_3} breadth=15
-x2 W \ket{0} \ket{y_2} breadth=15
-x1 W \ket{0} \ket{y_1} breadth=15
 x0 W \ket{0} \ket{y_0} breadth=15
+x1 W \ket{0} \ket{y_1} breadth=15
+x2 W \ket{0} \ket{y_2} breadth=15
+x3 W \ket{0} \ket{y_3} breadth=15
 
 # x0 HH
 x1 HH

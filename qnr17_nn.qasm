@@ -4,9 +4,6 @@ include "qelib1.inc";
 qreg q[4];
 creg c[4];
 
-# Some hadamard gates can be
-# cancelled in the beginning.
-# h q[0];
 h q[1];
 h q[2];
 h q[3];
